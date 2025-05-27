@@ -20,7 +20,6 @@
   ```
   Everything-1.4.1.1026.x64.zip  
   KeePass-2.58.zip  
-  EfsPotato.exe  
   Upgrade_Notice.pdf  
   ```
 
