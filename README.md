@@ -3,6 +3,9 @@
 ## Overview
 This write-up details the complete penetration testing process of the HTB Fluffy machine, including successful attacks, failed attempts, and lessons learned. The target was a Windows domain environment where we exploited SMB misconfigurations, performed Kerberos attacks, and ultimately gained domain administrator privileges through certificate template vulnerabilities.
 
+Other pro writeups:
+- https://www.hyhforever.top/posts/2025/05/htb-fluffy/
+
 ## Initial Reconnaissance
 
 ### Host Discovery
